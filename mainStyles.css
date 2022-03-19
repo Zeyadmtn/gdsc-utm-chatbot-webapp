@@ -1,12 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
 
 .main-box {
-    background-image: linear-gradient(to top, #4285F4, rgb(22, 19, 75));
+    background-image: linear-gradient(to top, #EA4335, rgb(73, 10, 10));
     height: 900px;
     width: 1000px;
     border-radius: 5%;
     position: absolute;
     left: 450px;
     padding-top: 0px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.19);
+    filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.19));
 }
 
 .gdsc-img {
@@ -16,4 +19,52 @@
     width: 300px;
     left: 350px;
     top: -70px;
+}
+
+
+svg {
+    display: block;
+    font: 2.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 10.5s infinite linear;
+    letter-spacing: 1.5px;
+}
+
+.text-copy:nth-child(1){
+  stroke: #fffb00;
+  animation-delay: -2;
+}
+
+.text-copy:nth-child(2){
+  stroke: #ffffff;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #ffe600;
+  animation-delay: -6s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #ffffff;
+  animation-delay: -8s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #ffff00;
+  animation-delay: -10s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
 }
