@@ -1,86 +1,118 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300;600&display=swap");
 
 .main-box {
-    background-image: linear-gradient(to top, #EA4335, rgb(73, 10, 10));
-    height: 1300px;
-    width: 1000px;
-    border-radius: 5%;
-    position: absolute;
-    left: 450px;
-    padding-top: 0px;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.19);
-    filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.19));
+  background-image: linear-gradient(to top, #ea4335, rgb(73, 10, 10));
+  height: 1300px;
+  width: 1000px;
+  border-radius: 5%;
+  position: absolute;
+  left: 450px;
+  padding-top: 0px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.19);
+  filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.19));
 }
 
 .gdsc-img {
-    z-index: 1;
-    position: relative;
-    height: 300px;
-    width: 300px;
-    left: 350px;
-    top: -70px;
+  z-index: 1;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  left: 350px;
+  top: -70px;
 }
 
-
 svg {
-    z-index: 2;
-    display: block;
-    font: 2em 'Montserrat';
-    width: 960px;
-    height: 250px;
-    margin: 0 auto;
-    position: absolute;
-    top: -150px;
-    left: -80px;
+  z-index: 2;
+  display: block;
+  font: 2em "Montserrat";
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: -180px;
 }
 
 .text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
-    letter-spacing: 3px;
-
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+  letter-spacing: 3px;
 }
 
-.text-copy:nth-child(1){
+.text-copy:nth-child(1) {
   stroke: rgb(255, 255, 255);
   animation-delay: -1;
 }
 
-.text-copy:nth-child(2){
+.text-copy:nth-child(2) {
   stroke: yellow;
   animation-delay: -2s;
 }
 
-.text-copy:nth-child(3){
+.text-copy:nth-child(3) {
   stroke: yellow;
   animation-delay: -3s;
 }
 
-.text-copy:nth-child(4){
+.text-copy:nth-child(4) {
   stroke: yellow;
   animation-delay: -4s;
 }
 
-.text-copy:nth-child(5){
+.text-copy:nth-child(5) {
   stroke: rgb(255, 255, 255);
   animation-delay: -5s;
 }
 
-@keyframes stroke-offset{
-  100% {stroke-dashoffset: -30%;}
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -30%;
+  }
 }
 
 .robot-greeting {
-    opacity: 0.9;
-    z-index: 1;
-    position: absolute;
-    height: 300px;
-    width: auto;
-    top: 15px;
-    right: 15px;
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+  height: 300px;
+  width: auto;
+  top: 85px;
+  right: 15px;
+}
+
+.instruction-box {
+    width: 700px;
+    height: auto;
+}
+.instruction-title {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  left: 30px;
+}
+
+.instruction-text {
+    text-align: justify;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: 100px;
+  font-size: 30px;
+  left: 30px;
+  line-height: 150%;
+}
+
+.cimb-bot-frame {
+    height: 400px;
+    width: 950px;
+    position: relative;
+    left: 20px;
+    top: 150px;
+    border-radius: 2%;
 }
