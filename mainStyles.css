@@ -2,11 +2,12 @@
 
 .main-box {
   background-image: linear-gradient(to top, #ea4335, rgb(73, 10, 10));
-  height: 1300px;
+  height: 1800px;
   width: 1000px;
   border-radius: 5%;
   position: absolute;
-  left: 450px;
+  left: 400px;
+  right: 400px;
   padding-top: 0px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.19);
   filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.19));
@@ -115,4 +116,32 @@ svg {
     left: 20px;
     top: 150px;
     border-radius: 2%;
+}
+
+.personal-bot-frame {
+    height: 400px;
+    width: 950px;
+    position: relative;
+    left: 20px;
+    top: 150px;
+    border-radius: 2%;
+}
+
+.gdsc-logo {
+    background-color: white;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 150px;
+    left: 350px;
+}
+
+.bot-title {
+    color: white;
+    font-family: "Raleway";
+    font-size: 30px;
+    position: relative;
+    left: 30px;
+    top: 160px;
 }
